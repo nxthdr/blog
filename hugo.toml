@@ -1,0 +1,4 @@
+baseURL = 'https://nextheader.dev/'
+languageCode = 'en-us'
+title = 'nextheader.dev'
+theme = 'hextra'
