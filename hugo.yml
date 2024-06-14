@@ -1,0 +1,27 @@
+title: Next Header
+languageCode: en-us
+
+theme: hextra
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: logo/favicon.svg
+      dark: logo/favicon-dark.svg
+      link: /
+      width: 40
+      height: 20
+
+menu:
+  main:
+    - name: Search
+      weight: 2
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/NXTHDR"
+      params:
+        icon: github
