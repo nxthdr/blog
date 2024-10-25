@@ -1,9 +1,11 @@
-title: Next Header
+title: NXTHDR
 languageCode: en-us
 
 theme: hextra
 
 params:
+  description: Observing the Internet, for Research and Beneficial Initiatives
+
   navbar:
     displayTitle: true
     displayLogo: true
@@ -13,15 +15,38 @@ params:
       link: /
       width: 40
       height: 20
+  
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+
+  editURL:
+    enable: true
+    base: "https://github.com/nxthdr/nxthdr.dev/edit/main/"
+
+  footer:
+    enable: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+enableInlineShortcodes: true
 
 menu:
   main:
-    - name: Search
-      weight: 2
-      params:
-        type: search
+    - identifier: about
+      name: About
+      pageRef: /about
+      weight: 1
     - name: GitHub
-      weight: 5
-      url: "https://github.com/NXTHDR"
+      weight: 2
+      url: "https://github.com/nxthdr"
       params:
         icon: github
