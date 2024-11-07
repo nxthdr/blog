@@ -50,3 +50,8 @@ menu:
       url: "https://github.com/nxthdr"
       params:
         icon: github
+    - name: Discord
+      weight: 3
+      url: "https://discord.gg/KRsVs7jafg"
+      params:
+        icon: discord
