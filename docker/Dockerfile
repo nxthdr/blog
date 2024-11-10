@@ -6,9 +6,10 @@ WORKDIR /opt/hugo
 COPY . .
 RUN hugo 
 
-FROM nginx:1.27-alpine
+FROM caddy:latest
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /www/html
 COPY --from=build /opt/hugo/public .
+COPY ./docker/config/Caddyfile /etc/caddy/Caddyfile
 
 EXPOSE 80/tcp
