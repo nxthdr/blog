@@ -45,13 +45,13 @@ menu:
       name: About
       pageRef: /about
       weight: 1
-    - name: GitHub
-      weight: 2
-      url: "https://github.com/nxthdr"
-      params:
-        icon: github
     - name: Discord
-      weight: 3
+      weight: 2
       url: "https://discord.gg/KRsVs7jafg"
       params:
         icon: discord
+    - name: GitHub
+      weight: 3
+      url: "https://github.com/nxthdr"
+      params:
+        icon: github
