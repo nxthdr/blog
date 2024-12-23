@@ -1,4 +1,4 @@
-title: NXTHDR
+title: nxthdr
 languageCode: en-us
 
 theme: hextra
@@ -15,7 +15,7 @@ params:
       link: /
       width: 40
       height: 20
-  
+
   blog:
     list:
       displayTags: true
