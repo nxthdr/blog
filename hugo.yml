@@ -41,17 +41,21 @@ enableInlineShortcodes: true
 
 menu:
   main:
+    - identifier: blog
+      weight: 1
+      name: Blog
+      pageRef: /blog
     - identifier: about
+      weight: 2
       name: About
       pageRef: /about
-      weight: 1
     - name: Discord
-      weight: 2
+      weight: 3
       url: "https://discord.gg/KRsVs7jafg"
       params:
         icon: discord
     - name: GitHub
-      weight: 3
+      weight: 4
       url: "https://github.com/nxthdr"
       params:
         icon: github
