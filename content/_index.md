@@ -5,7 +5,7 @@ layout: hextra-home
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  Observing the Internet&nbsp;<br class="sm:hx-block hx-hidden" />for Research and Beneficial Initiatives
+  Observing the Internet&nbsp;<br class="sm:hx-block hx-hidden" />for Research, Education and Beneficial Initiatives
 {{< /hextra/hero-headline >}}
 </div>
 
