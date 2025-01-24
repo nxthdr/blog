@@ -112,7 +112,7 @@ Scaleway Stardurst Warsaw    42€
 
 In 2024, I focused my time and resources on building the "core" infrastructure. In 2025, my focus will shift to developing the probing infrastructure to observe the internet through measurements.
 
-I will go into more detail in a future blog post, but the basic plan is to use Vultr instances in multiple locations, announcing anycast and site-local /48 prefixes via the ASN. Similar to the IX servers, these instances will be connected to the compute server via WireGuard tunnels.
+I will go into more detail in a future blog post, but the basic plan is to use Vultr instances in multiple locations, announcing anycast and unicast /48 prefixes via the ASN. Similar to the IX servers, these instances will be connected to the compute server via WireGuard tunnels.
 
 <br>
 {{< chart >}}
