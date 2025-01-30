@@ -24,7 +24,7 @@ Every aspect of **nxthdr** is open and transparent:
 ### Saimiris
 
 [saimiris](https://github.com/nxthdr/saimiris) is a high-speed probing platform that provides the essential plumbing for users to perform traceroute-like and ping-like measurements from multiple vantage points. The results are stored in a ClickHouse database and made available to the community for analysis.
-At its core, saimiris leverages [Caracat](https://github.com/maxmouchet/caracat), a high-speed ICMP/UDP IPv4/v6 probing library.This library serves as the foundation for reimplementing powerful tools such as [yarrp](https://github.com/cmand/yarrp) and [zmap](https://github.com/zmap/zmap).
+At its core, saimiris leverages [Caracat](https://github.com/maxmouchet/caracat), a high-speed ICMP/UDP IPv4/v6 probing library. This library serves as the foundation for reimplementing powerful tools such as [yarrp](https://github.com/cmand/yarrp) and [zmap](https://github.com/zmap/zmap).
 
 
 ## Get Involved
