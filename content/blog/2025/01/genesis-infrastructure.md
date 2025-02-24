@@ -6,9 +6,9 @@ authors:
   link: https://github.com/matthieugouel
   image: https://github.com/matthieugouel.png
 tags:
-- nxthdr
-- as215011
 - infastructure
+- as215011
+- updates
 ---
 
 **nxthdr** and **as215011** are celebrating their first new year! 🎉
@@ -69,7 +69,7 @@ In August 2024, the [CNRS](https://www.cnrs.fr/fr) offered to sponsor a second i
 **Cost /year**
 ```
 iFog Frankfurt IX server 168 CHF
-iFog Amsterdam IX server 421 CHF (sponsored by CNRS)
+iFog Amsterdam IX server 426 CHF (sponsored by CNRS)
 ```
 
 
@@ -107,13 +107,6 @@ Scaleway Stardurst Amsterdam 42€
 Scaleway Stardurst Warsaw    42€
 ```
 
-
-## What's next?
-
-In 2024, I focused my time and resources on building the "core" infrastructure. In 2025, my focus will shift to developing the probing infrastructure to observe the internet through measurements.
-
-I will go into more detail in a future blog post, but the basic plan is to use Vultr instances in multiple locations, announcing anycast and unicast /48 prefixes via the ASN. Similar to the IX servers, these instances will be connected to the compute server via WireGuard tunnels.
-
 ## Costs for 2024
 
 <br>
@@ -124,20 +117,22 @@ I will go into more detail in a future blog post, but the basic plan is to use V
       labels: [
         'ASN + /44 prefixes',
         'IX servers',
-        'Compute server',
+        'Compute servers',
         'Domain names',
-        'IPv4 proxies',
       ],
     datasets: [{
-      data: [101, 628, 240, 24, 84],
+      data: [61, 297, 133, 16],
     }]
   },
 }
 {{< /chart >}}
 
-**Total infrastructure costs for 2024: 1077€**
+**Total infrastructure costs for 2024: 522€**
 
-Out of this total, 449€ has been sponsored by the CNRS for the iFog Amsterdam IX server.
+Out of this total, 177€ has been sponsored in 2024 by the CNRS for the iFog Amsterdam IX server. The detailed breakdown of the infrastructure costs can be found in the project's open [bookkeeping](https://docs.google.com/spreadsheets/d/1fguIDaXn4DuEexZrudJjzn2Sucpy8Qx5bACcYEH1ie4/edit?usp=sharing).
 
-Note that in 2024, the costs were lower because the rental expenses for each component were prorated. For example, the IX servers were rented in May and August, while the compute server was rented in May.
-The detailed breakdown of the infrastructure costs can be found in the project's open [bookkeeping](https://github.com/nxthdr/bookkeeping/tree/main).
+## What's next?
+
+In 2024, I focused my time and resources on building the "core" infrastructure. In 2025, my focus will shift to developing the probing infrastructure to observe the internet through measurements.
+
+I will go into more detail in a future blog post, but the basic plan is to use Vultr instances in multiple locations, announcing anycast and unicast /48 prefixes via the ASN. Similar to the IX servers, these instances will be connected to the compute server via WireGuard tunnels.

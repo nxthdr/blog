@@ -7,7 +7,6 @@ toc: false
 Observing the Internet
 {{< /hextra/hero-headline >}}
 
-<div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
 Emphasizing inclusion, ethics and openness.
 {{< /hextra/hero-subtitle >}}
@@ -30,7 +29,7 @@ Every aspect of **nxthdr** is open, transparent and participatory:
 * The [infrastructure](https://github.com/nxthdr/infrastructure) is managed entirely as open-source code. You can see the configuration of the servers and routers, the services running, the monitoring setup, the database tables and more. You can make suggestions or improvements by opening an issue or a pull request.
 * The [observability](https://grafana.nxthdr.dev) is public, with Grafana dashboards providing real-time insights into the platform's health. It also ease the debugging and troubleshooting communication in case of issues.
 * The [roadmap](https://github.com/orgs/nxthdr/projects/1) of the project is public and participatory, inviting ideas and contributions. The roadmap is updated regularly to reflect the current state of the project. Feel free to open issues to suggest new features or improvements.
-* The [bookkeeping](https://github.com/nxthdr/bookkeeping) is complete and publicly available. It includes the financial transactions, the donations received and the budget forecast. The bookkeeping is currently updated annually.
+* The [bookkeeping](https://docs.google.com/spreadsheets/d/1fguIDaXn4DuEexZrudJjzn2Sucpy8Qx5bACcYEH1ie4/edit?usp=sharing) is complete and publicly available. It includes the financial transactions, the donations received and the budget forecast.
 
 ## Flagship Projects
 
