@@ -28,7 +28,8 @@ params:
     base: "https://github.com/nxthdr/nxthdr.dev/edit/main/"
 
   footer:
-    enable: false
+    enable: true
+    displayPoweredBy: false
 
 markup:
   goldmark:

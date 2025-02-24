@@ -1,7 +1,6 @@
-/* eslint-disable */
 {{- if not (.Page.Scratch.Get "hasChartJS") -}}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script> Chart.defaults.color = '#fff'; </script>
+<script> Chart.defaults.color = '#aaa'; </script>
 {{- .Page.Scratch.Set "hasChartJS" true -}}
 {{- end -}}
 
