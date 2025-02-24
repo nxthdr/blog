@@ -2,13 +2,13 @@
 toc: false
 ---
 
-<div class="hx-mt-6 hx-mb-6" style="text-align: left;">
+<div class="hx-mt-6 hx-mb-6" style="text-align: center;">
 {{< hextra/hero-headline >}}
-Observing the Internet
+A Wide-Open Window to the Internet
 {{< /hextra/hero-headline >}}
 
 {{< hextra/hero-subtitle >}}
-Emphasizing inclusion, ethics and openness.
+Internet Measurements — Open, Ethical, and For Everyone
 {{< /hextra/hero-subtitle >}}
 </div>
 
