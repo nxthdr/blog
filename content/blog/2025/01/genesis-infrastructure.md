@@ -114,6 +114,8 @@ In 2024, I focused my time and resources on building the "core" infrastructure. 
 
 I will go into more detail in a future blog post, but the basic plan is to use Vultr instances in multiple locations, announcing anycast and unicast /48 prefixes via the ASN. Similar to the IX servers, these instances will be connected to the compute server via WireGuard tunnels.
 
+## Costs for 2024
+
 <br>
 {{< chart >}}
 {
@@ -133,7 +135,9 @@ I will go into more detail in a future blog post, but the basic plan is to use V
 }
 {{< /chart >}}
 
-**Total cost of the infrastructure: 1077 /year (including 449€ sponsored by the CNRS 🫶)**
+**Total infrastructure costs for 2024: 1077€**
+
+Out of this total, 449€ has been sponsored by the CNRS for the iFog Amsterdam IX server.
 
 Note that in 2024, the costs were lower because the rental expenses for each component were prorated. For example, the IX servers were rented in May and August, while the compute server was rented in May.
 The detailed breakdown of the infrastructure costs can be found in the project's open [bookkeeping](https://github.com/nxthdr/bookkeeping/tree/main).
