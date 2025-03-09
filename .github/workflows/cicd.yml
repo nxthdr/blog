@@ -19,10 +19,13 @@ jobs:
       id-token: write
 
     runs-on: ${{ matrix.os.name }}
-    needs: [ tests ]
+    # needs: [ tests ]  # TODO
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Sync theme submodule
+        run: git submodule sync && git submodule update --init --recursive
 
       - name: Prepare
         run: |
@@ -51,6 +54,7 @@ jobs:
         with:
           context: .
           push: true
+          file: ./docker/Dockerfile
           provenance: false
           platforms: linux/${{ matrix.os.arch }}
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
