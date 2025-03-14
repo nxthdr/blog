@@ -9,7 +9,7 @@ I believe the Internet measurement community is still lacking fundamental tools 
 
 I had the opportunity to work in a well-known lab alongside amazing researchers who are well-known in the community. This gave me the chance to connect with people and gain access to datasets and platforms. But unfortunately, that such opportunities may not be as easily available to those working independently or in smaller labs.
 
-**nxthdr** and **as215011** are not flashy, disruptive new testbeds. In fact, they build on common ideas that have existed for a long time, such as a BGP testbed [^1] and a high-speed probing platform [^2]. The real edge lies in combining these ideas into a single platform and making it open, accessible to everyone and community-driven.
+**nxthdr** and **as215011** are built on ideas that have existed for a long time, such as a BGP testbed [^1] and a high-speed probing platform [^2]. The real edge lies in combining these ideas into a single platform and making it open, accessible to everyone and community-driven.
 
 Feel free to join the [Discord](https://discord.gg/KRsVs7jafg), to discuss the project and get involved!
 
