@@ -14,39 +14,39 @@ Internet Measurements — Open, Ethical, and For Everyone
 
 **nxthdr**, pronounced /ˈnɛkst ˈhɛdə˞/ or simply "Next Header", is an initiative to offer metrology capabilities to researchers and students to study and learn about the Internet.
 
-It integrates high-speed probing capabilities together with peering control, offering the community a unique platform. **nxthdr** enables Internet-scale route tracing while managing and collecting BGP advertisements from diverse vantage points and multiple IXPs, powered by [**as215011**](/as215011).
+It integrates high-speed probing capabilities together with peering control, offering the community a unique platform. The **nxthdr** [infrastructure](/infrastructure) enables Internet-scale route tracing while managing and collecting BGP advertisements from diverse vantage points and multiple IXPs, powered by the **as215011** [network](/as215011).
 
-At the moment, **nxthdr** is in its early stages, with the infrastructure being built rapidly. It's not yet possible for users to their own measurements[^1] from the platform nor change its BGP configuration[^2], but this is a priority for the project.
+> [!IMPORTANT]
+> Currently, **nxthdr** is in its early stages and not yet open to the public for experiments.
+> However, the [datasets](/datasets) collected are already accessible.
 
-Nonetheless, you can already access the data collected by **nxthdr** in the [datasets](/datasets) section.
+
+## Flagship Projects
+
+### Peering Platform
+
+The peering platform is built around an autonomous system, **as215011**, which advertises multiple IPv6 prefixes. This network is designed to support researchers and students in conducting Internet-scale experiments on routing and peering. See the [**as215011**](/as215011) page for more information.
+
+BGP data is collected using [risotto](https://github.com/nxthdr/risotto) BGP Monitoring Protocol (BMP) collector. Each **as215011** router sends BMP messages to risotto, which stores the updates in a ClickHouse database. By maintaining a state, risotto ensures accurate and comprehensive BGP data, which is made freely [available](/datasets) to everyone for analysis.
+
+### Probing Platform
+
+The probing platform consists of multiple servers distributed worldwide. These servers can perform high-speed traceroute-like and ping-like measurements. They advertise **as215011** IPv6 prefixes, allowing measurements using both source unicast and anycast addresses.
+
+[saimiris](https://github.com/nxthdr/saimiris) is a high-speed probing pipeline that provides the essential plumbing for users to perform active measurements from the probing servers. The measurements results are stored in a ClickHouse database and made freely [available](/datasets) to everyone for analysis.
 
 ## Values
 
 Every aspect of **nxthdr** is open, transparent and participatory:
 
-* The [datasets](/datasets) collected is freely accessible under [ODbL](https://opendatacommons.org/licenses/odbl/) license, with no restrictions, authentication, or need for justification.
+* The [datasets](/datasets) collected is freely accessible under [ODbL](https://opendatacommons.org/licenses/odbl/) license, with no restrictions, delay, authentication, or need for justification.
 * The [tools](https://github.com/nxthdr) powering the platform are all open-source, such as [risotto](https://github.com/nxthdr/risotto) and [saimiris](https://github.com/nxthdr/saimiris). You can use them, contribute to them, or even run your own instance.
 * The [infrastructure](https://github.com/nxthdr/infrastructure) is managed entirely as open-source code. You can see the configuration of the servers and routers, the services running, the monitoring setup, the database tables and more. You can make suggestions or improvements by opening an issue or a pull request.
 * The [observability](https://grafana.nxthdr.dev) is public, with Grafana dashboards providing real-time insights into the platform's health. It also ease the debugging and troubleshooting communication in case of issues.
 * The [roadmap](https://github.com/orgs/nxthdr/projects/1) of the project is public and participatory, inviting ideas and contributions. The roadmap is updated regularly to reflect the current state of the project. Feel free to open issues to suggest new features or improvements.
 * The [bookkeeping](https://docs.google.com/spreadsheets/d/1fguIDaXn4DuEexZrudJjzn2Sucpy8Qx5bACcYEH1ie4/edit?usp=sharing) is complete and publicly available. It includes the financial transactions, the donations received and the budget forecast.
 
-## Flagship Projects
-
-### Risotto
-
-[risotto](https://github.com/nxthdr/risotto) is a BGP Monitoring Protocol (BMP) collector. Each **as215011** router sends BMP messages to risotto, which stores the updates in a ClickHouse database. By maintaining a state, risotto ensures accurate and comprehensive BGP data, which is made freely available to the community for analysis.
-
-### Saimiris
-
-[saimiris](https://github.com/nxthdr/saimiris) is a high-speed probing platform that provides the essential plumbing for users to perform traceroute-like and ping-like measurements from multiple vantage points. The results are stored in a ClickHouse database and made available to the community for analysis.
-At its core, saimiris leverages [caracat](https://github.com/maxmouchet/caracat), a high-speed ICMP/UDP IPv4/v6 probing library. This library serves as the foundation for reimplementing powerful tools such as [yarrp](https://github.com/cmand/yarrp) and [zmap](https://github.com/zmap/zmap).
-
 
 ## Get Involved
 
 Join us on [Discord](https://discord.gg/KRsVs7jafg) to discuss the project and get involved!
-
-
-[^1]: Self-service active measurements ([roadmap](https://github.com/nxthdr/roadmap/issues/13))
-[^2]: Self-service BGP configuation ([roadmap](https://github.com/nxthdr/roadmap/issues/12))

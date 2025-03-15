@@ -3,7 +3,7 @@ title: Datasets
 toc: false
 ---
 
-For now, the datasets are accessible from ClickHouse using our HTTP proxy. In the future, we might offer other ways to access the data.
+The datasets are accessible from ClickHouse using our HTTP proxy. In the future, we might offer other ways to access the data.
 
 > All data produced by **nxthdr** and **as215011** are publicly available and freely usable under [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
@@ -43,15 +43,17 @@ We use a basic username/password authentication to access the data. This is sole
 user: `read`
 password: `read`
 
-## Raw routing dataset
 
-The raw routing dataset is available in the `risotto.updates` table. The schema is described in our [infrastrcture](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/risotto/risotto.sql) repository.
+## Raw Peering Dataset
+
+The raw peering dataset is available in the `risotto.updates` table. The schema is described in our [infrastrcture](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/risotto/risotto.sql) repository.
 
 Each router of **as215011** sends BMP messages to [risotto](https://github.com/nxthdr/risotto), which records the updates in a ClickHouse database.
 
 Each raw corresponds to an update or a withdraw, capturing prefixes, AS paths, communities, and other attributes.
 
-## Raw probing dataset
+
+## Raw Probing Dataset
 
 The raw probing dataset is available in the `saimiris.results` table. The schema is described in our [infrastructure](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/saimiris/saimiris.sql) repository.
 

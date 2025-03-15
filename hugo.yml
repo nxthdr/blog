@@ -44,27 +44,31 @@ menu:
   main:
     - identifier: datasets
       weight: 1
-      name: Datasets
+      name: datasets
       pageRef: /datasets
-    - identifier: as215011
+    - identifier: infrastructure
       weight: 2
-      name: AS215011
+      name: infrastructure
+      pageRef: /infrastructure
+    - identifier: as215011
+      weight: 3
+      name: as215011
       pageRef: /as215011
     - identifier: blog
-      weight: 3
-      name: Blog
+      weight: 4
+      name: blog
       pageRef: /blog
     - identifier: about
-      weight: 4
-      name: About
-      pageRef: /about
-    - name: Discord
       weight: 5
+      name: about
+      pageRef: /about
+    - name: discord
+      weight: 6
       url: "https://discord.gg/KRsVs7jafg"
       params:
         icon: discord
-    - name: GitHub
-      weight: 6
+    - name: github
+      weight: 7
       url: "https://github.com/nxthdr"
       params:
         icon: github
