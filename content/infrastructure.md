@@ -7,7 +7,7 @@ toc: false
 This page offers an overview of the **nxthdr** platform's infrastructure, outlining its key components and progressively building a complete picture of the system. The infrastructure is managed as code and is open-source, accessible in the [infrastructure](https://github.com/nxthdr/infrastructure) repository.
 
 
-## IXP Servers
+## as215011 Network
 
 ![nxthdr_infrastrcture](infrastructure/ixp.png)
 
@@ -27,7 +27,7 @@ We also manage probing servers used for active measurements. These servers are [
 The probing servers advertise the sub prefixes of `2a0e:97c0:8a0::/44`, which is dedicated to the **nxthdr** probing infrastructure. This enables measurements using source unicast and anycast addresses managed by **as215011**. As with other parts of the network, the limitation is that it is IPv6-only. However, if measurements need to be performed from IPv4-only networks, the server's IPv4 address can possibly be used.
 
 
-## Core Server
+## Core Services
 
 ![nxthdr_infrastrcture](infrastructure/core.png)
 
@@ -37,10 +37,7 @@ All services are managed using [Docker](https://www.docker.com/). We utilize two
 
 Currently, there is no redundancy for the core server, but regular backups of service data are performed.
 
-
-## IPv4 proxy server
-
-![nxthdr_infrastrcture](infrastructure/ipv4-gateway.png)
+### IPv4 Proxy
 
 The current limitation of **as215011** is that it is IPv6-only. To address this, we use an "IPv4 proxy server"--a [Scaleway](https://www.scaleway.com/en/) cloud instance with a public IPv4 address. This server proxies IPv4 traffic to the IPv6-only core server through a [Caddy](https://caddyserver.com/) reverse proxy.
 
