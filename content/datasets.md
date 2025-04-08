@@ -14,7 +14,7 @@ echo """
      WITH concat(prefix_addr, '/', prefix_len) AS prefix
      SELECT prefix,
             max(length(communities)) AS n_communities
-     FROM risotto.updates
+     FROM bmp.updates
      GROUP BY prefix
      ORDER BY n_communities DESC
      LIMIT 5 FORMAT PRETTY
@@ -46,7 +46,7 @@ password: `read`
 
 ## Raw Peering Dataset
 
-The raw peering dataset is available in the `risotto.updates` table. The schema is described in our [infrastrcture](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/risotto/risotto.sql) repository.
+The raw peering dataset is available in the `bmp.updates` table. The schema is described in our [infrastrcture](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/bmp/bmp.sql) repository.
 
 Each router of **as215011** sends BMP messages to [risotto](https://github.com/nxthdr/risotto), which records the updates in a ClickHouse database.
 
