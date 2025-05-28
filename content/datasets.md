@@ -44,6 +44,15 @@ user: `read`
 password: `read`
 
 
+## Raw Probing Dataset
+
+The raw probing dataset is available in the `saimiris.results` table. The schema is described in our [infrastructure](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/saimiris/saimiris.sql) repository.
+
+Active measurements using [saimiris](https://github.com/nxthdr/saimiris), whether scheduled via cron jobs or performed on demand, are stored in a ClickHouse database. This data consists of traceroute-like and ping-like measurement results collected from multiple vantage points.
+
+Each row corresponds to a measurement result, capturing the source and destination IP addresses of the sent packet, the reply, the hop count, and other relevant attributes.
+
+
 ## Raw Peering Dataset
 
 The raw peering dataset is available in the `bmp.updates` table. The schema is described in our [infrastrcture](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/bmp/bmp.sql) repository.
@@ -52,11 +61,8 @@ Each router of **as215011** sends BMP messages to [risotto](https://github.com/n
 
 Each raw corresponds to an update or a withdraw, capturing prefixes, AS paths, communities, and other attributes.
 
+## Raw Traffic Dataset
 
-## Raw Probing Dataset
+The raw traffic dataset is available in the `flows.records` table. The schema is described in our [infrastructure](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/flows/flows.sql) repository.
 
-The raw probing dataset is available in the `saimiris.results` table. The schema is described in our [infrastructure](https://github.com/nxthdr/infrastructure/blob/main/clickhouse-tables/saimiris/saimiris.sql) repository.
-
-Active measurements using [saimiris](https://github.com/nxthdr/saimiris), whether scheduled via cron jobs or performed on demand, are stored in a ClickHouse database. This data consists of traceroute-like and ping-like measurement results collected from multiple vantage points.
-
-Each row corresponds to a measurement result, capturing the source and destination IP addresses of the sent packet, the reply, the hop count, and other relevant attributes.
+Each router of **as215011** sends sflow messages to [goflow2](https://github.com/netsampler/goflow2), which records the flow samples in a ClickHouse database.
