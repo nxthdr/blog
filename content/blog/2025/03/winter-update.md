@@ -7,9 +7,7 @@ authors:
   image: https://github.com/matthieugouel.png
 tags:
 - update
-- infrastructure
-- saimiris
-- prowl
+- season
 ---
 
 In this earlier [post](/blog/2025/01/genesis-infrastructure/), I talked about the origins of the **nxthdr** and **as215011** projects, laying the groundwork for what I focused on throughout 2024. Moving into 2025, I plan to share updates more regularly--aiming for quarterly posts at the end of each season. This is the winter update.
