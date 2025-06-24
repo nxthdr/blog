@@ -1,3 +1,3 @@
-[submodule "themes/hextra"]
-	path = themes/hextra
-	url = https://github.com/imfing/hextra.git
+[submodule "themes/m10c"]
+	path = themes/m10c
+	url = https://github.com/vaga/hugo-theme-m10c.git

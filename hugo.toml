@@ -1,0 +1,45 @@
+baseURL = "https://blog.nxthdr.dev/"
+title = "nxthdr"
+theme = "m10c"
+enableEmoji = true
+
+[pagination]
+pagerSize = 10
+
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "https://nxthdr.dev/about"
+weight = 2
+
+[params]
+author = "nxthdr"
+avatar = "avatar.png"
+description = "Blogging the journey"
+menu_item_separator = " - "
+[[params.social]]
+icon = "mail"
+name = "Mail"
+url = "mailto:admin@nxthdr.dev"
+[[params.social]]
+icon = "brand-github"
+name = "Github"
+url = "https://github.com/nxthdr"
+[[params.social]]
+icon = "brand-discord"
+name = "Discord"
+url = "https://discord.gg/KRsVs7jafg"
+
+[params.style]
+darkestColor = "#010408"
+darkColor = "#0D1116"
+lightColor = "#afbac4"
+lightestColor = "#ffffff"
+primaryColor = "#f6f6f6"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[logger]
+ignoreLogs = ['warning-goldmark-raw-html']
