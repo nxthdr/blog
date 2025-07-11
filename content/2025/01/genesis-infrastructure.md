@@ -7,7 +7,7 @@ authors:
   image: https://github.com/matthieugouel.png
 tags:
 - infastructure
-- as215011
+- AS215011
 - updates
 ---
 
@@ -60,7 +60,7 @@ The VM comes with multiple NICs. One of them is used to establish a session with
 
 After a few days peering with the LOCIX Route Servers, [Hurricane Electric](https://he.net/) contacted me through the email I had registered on PeeringDB, offering to peer with me. I've asked if they could provide me free transit, to which they agreed. This allowed me to have two distinct upstream providers: one from iFog and another from Hurricane Electric.
 
-In August 2024, the [CNRS](https://www.cnrs.fr/fr) offered to sponsor a second iFog IX server in Amsterdam for one year, in exchange for maintaining it for use in research projects. Naturally, I accepted the offer, especially considering that the iFog Amsterdam IX server is connected to [NL-IX](https://www.peeringdb.com/ix/64), one of the largest IXPs in Europe.
+In August 2024, colleagues affiliated with the [CNRS](https://www.cnrs.fr/fr) facilitated access to a second iFog IX server, located in Amsterdam, with the understanding that I would maintain it to support research-related activities. Naturally, I accepted, especially considering that the iFog Amsterdam IX server is connected to [NL-IX](https://www.peeringdb.com/ix/64), one of the largest IXPs in Europe.
 
 
 ## Compute server
