@@ -32,7 +32,7 @@ To validate the platform’s early design, I conducted a proof of concept experi
 
 Probing at a rate of 10,000 packets per second from two Vultr instances (Paris and Atlanta) took roughly 40 minutes. You can view the per-minute number of replies in this [dashboard](https://grafana.nxthdr.dev/d/defi1poeecykgf/saimiris?orgId=2&from=2025-03-13T08:23:08.228Z&to=2025-03-13T09:05:59.573Z&timezone=browser).
 
-Finally, you can access the results of this experiment through the ClickHouse proxy. All data is shared under the Open Database License (ODbL). However, due to the current 7-day data retention policy, the specific data from this experiment may no longer be available. In the future, I plan to conduct regular experiments like this and retain certain datasets for longer periods.
+Finally, you can access the results of this experiment through the ClickHouse proxy. All data is shared under the Open Data Commons Public Domain Dedication and License (PDDL). However, due to the current 7-day data retention policy, the specific data from this experiment may no longer be available. In the future, I plan to conduct regular experiments like this and retain certain datasets for longer periods.
 
 For fun, we can reimplement the [anycatch](https://github.com/benjojo/AnyCatch) technique to discover anycast prefixes. The query returns prefixes where we get replies from the two agents:
 
