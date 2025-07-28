@@ -1,6 +1,6 @@
 # nxthdr.dev
 
-This is the source code of [https://nxthdr.dev](https://nxthdr.dev).
+This is the source code of [https://blog.nxthdr.dev](https://blog.nxthdr.dev).
 
 
 ## Development

@@ -11,7 +11,7 @@ pagerSize = 10
 identifier = "about"
 name = "About"
 url = "https://nxthdr.dev/about"
-weight = 2
+weight = 1
 
 [params]
 author = "nxthdr"
