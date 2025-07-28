@@ -6,13 +6,6 @@ enableEmoji = true
 [pagination]
 pagerSize = 10
 
-[menu]
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "https://nxthdr.dev/about"
-weight = 1
-
 [params]
 author = "nxthdr"
 avatar = "avatar.png"
