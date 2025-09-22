@@ -1,5 +1,5 @@
 ---
-title: "Genesis of the project"
+title: "Genesis of the Project"
 date: "2025-01-01"
 authors:
 - name: Matthieu Gouel
