@@ -6,9 +6,9 @@ authors:
   link: https://github.com/matthieugouel
   image: https://github.com/matthieugouel.png
 tags:
-- infastructure
+- update
+- infrastructure
 - AS215011
-- updates
 ---
 
 **nxthdr** and **as215011** are celebrating their first new year! 🎉

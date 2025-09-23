@@ -1,11 +1,12 @@
 ---
-title: "Alpha of the Probing Platform"
+title: "Alpha Release of the Probing Platform"
 date: "2025-07-08"
 authors:
 - name: Matthieu Gouel
   link: https://github.com/matthieugouel
   image: https://github.com/matthieugouel.png
 tags:
+- update
 - announcement
 - probing-platform
 ---
