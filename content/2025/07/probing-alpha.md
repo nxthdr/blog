@@ -29,7 +29,7 @@ From a user perspective, the platform is straightforward. After signing up, each
 
 We allocate such a large address space per user because the source address itself can serve as a measurement ID. This gives users flexibility in how you can structure their experiments: a distinct source address can mark an entire campaign for easier grouping and analysis; separate addresses per vantage point make it straightforward to identify the origin of anycast measurements; and varying the source per destination prefix, or even per individual probe, enables studies of load balancing, path variability, or the behavior of middleboxes.
 
-All of this is already live in alpha. We are now looking for early adopters to try the platform and share feedback. Researchers, network operators, students, and anyone curious about Internet measurement is welcome to sign up for free at [nxthdr.dev](https://nxthdr.dev). You can talk to us about it in our [Discord](https://discord.gg/KRsVs7jafg).
+All of this is already live in alpha. We are now looking for early adopters to try the platform and share feedback. Researchers, network operators, students, and anyone curious about Internet measurement is welcome to sign up for free at [nxthdr.dev](https://nxthdr.dev). You can talk to us about it in our [Discord](https://discord.gg/KF3RSKXrSp).
 
 Each account comes with 10,000 probes per day, automatically reset at midnight UTC. Need more? Reach out at [admin@nxthdr.dev](mailto:admin@nxthdr.dev).
 
