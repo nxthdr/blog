@@ -17,7 +17,7 @@ This year, I plan to begin sharing blog posts to provide updates on the project,
 
 <!--more-->
 
-This post focuses solely on the infrastructure aspect of the project, detailing the process of acquiring an ASN, IPv6 prefixes, IX servers, compute servers, and domain names. If you are interested about the costs, you can check the open [bookkeeping](https://docs.google.com/spreadsheets/d/1fguIDaXn4DuEexZrudJjzn2Sucpy8Qx5bACcYEH1ie4/edit?usp=sharing).
+This post focuses solely on the infrastructure aspect of the project, detailing the process of acquiring an ASN, IPv6 prefixes, IX servers, compute servers, and domain names. If you are interested about the costs, you can check the open [bookkeeping](https://docs.google.com/spreadsheets/d/1ptkRO_R6Jgl1gUEaqihGFT23hSMS3msxBi8uUaS5xFo/edit?usp=sharing).
 
 
 ## ASN and IPv6 prefixes
