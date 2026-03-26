@@ -20,9 +20,9 @@ icon = "brand-github"
 name = "Github"
 url = "https://github.com/nxthdr"
 [[params.social]]
-icon = "brand-discord"
-name = "Discord"
-url = "https://discord.gg/KF3RSKXrSp"
+icon = "brand-matrix"
+name = "Chat"
+url = "https://chat.nxthdr.dev"
 
 [params.style]
 darkestColor = "#010408"
