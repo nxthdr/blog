@@ -1,5 +1,5 @@
 ---
-title: "Winter 2025 Update"
+title: "Winter 2026 Update"
 date: "2026-03-20"
 authors:
 - name: Matthieu Gouel
