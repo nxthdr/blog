@@ -1,7 +1,14 @@
+{{- /* First text paragraph of the summary, skipping leading images and captions */ -}}
+{{- $abstract := "" -}}
+{{- range findRE `(?s)<p>.*?</p>` .Summary -}}
+  {{- if and (not $abstract) (not (findRE `(?s)^<p>\s*(<img[^>]*>|<em>.*</em>)\s*</p>$` .)) -}}
+    {{- $abstract = . | plainify | htmlUnescape -}}
+  {{- end -}}
+{{- end -}}
 <li class="post-card">
   <a class="post-card-link" href="{{ .RelPermalink }}">
     <h3 class="post-card-title">{{ .Title }}</h3>
-    <p class="post-card-summary">{{ .Summary | plainify | truncate 220 }}</p>
+    <p class="post-card-summary">{{ $abstract | default (.Summary | plainify | truncate 220) }}</p>
   </a>
   {{ partial "post-meta.html" . }}
 </li>
