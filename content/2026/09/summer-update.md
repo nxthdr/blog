@@ -1,6 +1,6 @@
 ---
 title: "Summer 2026 Update"
-date: "2026-10-28"
+date: "2026-09-23"
 authors:
 - name: Matthieu Gouel
   link: https://github.com/matthieugouel
