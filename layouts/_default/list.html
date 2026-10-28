@@ -1,40 +1,11 @@
 {{ define "main" }}
-  <article>
-    {{ with .Content -}}<div class="post-content">{{- . -}}</div>{{- end }}
-    <ul class="posts-list">
-      {{ range where .Paginator.Pages "Type" "!=" "page" }}
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <span class="posts-list-item-description">
-            <!-- Tags -->
-            {{- with .Params.tags }}
-              <div>
-                {{ partial "icon.html" (dict "ctx" $ "name" "tag") }}
-                {{- range . -}}
-                {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
-                <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
-                {{- end }}
-                {{- end }}
-              </div>
-            {{- end }}
-
-            <!-- Description -->
-            {{ if .Truncated }}
-              <p class="auto">{{ .Summary | plainify }}</p>
-            {{ end }}
-
-            <!-- Date & time to read -->
-            <div>
-              {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
-              {{ .PublishDate.Format "Jan 2, 2006" }}
-              <span class="posts-list-item-separator">-</span>
-              {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
-              {{ .ReadingTime }} min read
-            </div>
-          </span>
-        </li>
-      {{ end }}
-    </ul>
-    {{ partial "pagination.html" $ }}
-  </article>
+  <header class="page-header">
+    <h1 class="page-title">{{ if eq .Kind "term" }}#{{ .Title | lower }}{{ else }}{{ .Title }}{{ end }}</h1>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </header>
+  <ul class="post-list">
+    {{ range .Pages }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </ul>
 {{ end }}

@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{ .Title }}</h1>
+      {{- if ne .Type "page" }}
+        {{ partial "post-meta.html" . }}
+        {{- with .Params.authors }}
+        <div class="authors">
+          {{- range . }}
+          <a class="author" href="{{ .link }}" target="_blank" rel="noreferrer noopener">
+            {{- with .image }}<img src="{{ . }}" alt="" width="24" height="24" loading="lazy" />{{ end -}}
+            {{ .name }}
+          </a>
+          {{- end }}
+        </div>
+        {{- end }}
+      {{- end }}
+    </header>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    {{- if ne .Type "page" }}
+    {{- $pages := .Site.RegularPages }}
+    <nav class="post-nav">
+      {{ with $pages.Prev . }}<a class="post-nav-prev" href="{{ .RelPermalink }}"><span>← Older</span>{{ .Title }}</a>{{ else }}<span></span>{{ end }}
+      {{ with $pages.Next . }}<a class="post-nav-next" href="{{ .RelPermalink }}"><span>Newer →</span>{{ .Title }}</a>{{ end }}
+    </nav>
+    {{- end }}
+  </article>
+{{ end }}

@@ -24,9 +24,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Sync theme submodule
-        run: git submodule sync && git submodule update --init --recursive
-
       - name: Prepare
         run: |
           platform=linux/${{ matrix.os.arch }}
