@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <section class="intro">
+    <span class="intro-logo"><img src="{{ "logo/favicon.svg" | relURL }}" alt="" width="34" height="34" /></span>
+    <div>
+      <h1 class="intro-name">{{ .Site.Title }}</h1>
+      <p class="intro-text">{{ .Site.Params.description }}</p>
+    </div>
+  </section>
+
+  {{ range .Site.RegularPages.GroupByDate "2006" }}
+    <section class="year-group">
+      <h2 class="year">{{ .Key }}</h2>
+      <ul class="post-list">
+        {{ range .Pages }}
+          {{ partial "post-card.html" . }}
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+{{ end }}

@@ -16,5 +16,5 @@ Guidance for Claude Code when working in the nxthdr blog (Hugo site).
 
 ## Local preview
 
-- `hugo server` (theme is the `m10c` git submodule under `themes/`).
+- `hugo server`. There is no theme: templates live in `layouts/` and styles in `assets/css/main.css`.
 - Local URLs drop the production `/blog` prefix, e.g. `http://localhost:1313/2026/06/spring-update/`.

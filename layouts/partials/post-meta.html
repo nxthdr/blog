@@ -1,0 +1,13 @@
+<div class="meta">
+  <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+  <span class="meta-sep">·</span>
+  <span>{{ .ReadingTime }} min read</span>
+  {{- with .GetTerms "tags" }}
+  <span class="meta-sep">·</span>
+  <span class="tags">
+    {{- range . }}
+    <a class="tag" href="{{ .RelPermalink }}">#{{ .LinkTitle | lower }}</a>
+    {{- end }}
+  </span>
+  {{- end }}
+</div>

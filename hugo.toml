@@ -1,16 +1,22 @@
 baseURL = "https://blog.nxthdr.dev/"
 title = "nxthdr"
-theme = "m10c"
 enableEmoji = true
+
+[markup.highlight]
+style = "github"
 
 [pagination]
 pagerSize = 10
 
+[menu]
+[[menu.main]]
+name = "nxthdr.dev"
+url = "https://nxthdr.dev"
+weight = 1
+
 [params]
 author = "nxthdr"
-avatar = "avatar.png"
 description = "Blogging the journey"
-menu_item_separator = " - "
 [[params.social]]
 icon = "mail"
 name = "Mail"
@@ -23,13 +29,6 @@ url = "https://github.com/nxthdr"
 icon = "brand-matrix"
 name = "Chat"
 url = "https://chat.nxthdr.dev"
-
-[params.style]
-darkestColor = "#010408"
-darkColor = "#0D1116"
-lightColor = "#afbac4"
-lightestColor = "#ffffff"
-primaryColor = "#f6f6f6"
 
 [markup.goldmark.renderer]
 unsafe = true
